@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$( "#cityfield" ).keyup(function(){
-		var url = "http://ec2-52-25-149-92.us-west-2.compute.amazonaws.com:3000/?q="+$("#cityfield").val();
+		var url = "http://ec2-52-25-149-92.us-west-2.compute.amazonaws.com:3000/getcity?q="+$("#cityfield").val();
 		$.ajax({url:url,dataType: "json",
 		success:function(data){
 			console.log("Got "+data);
